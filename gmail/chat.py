@@ -4,7 +4,7 @@ import os
 from openai import OpenAI
 from fastmcp import Client
 from dotenv import load_dotenv
-from server import mcp
+from gmail.server import mcp
 
 load_dotenv()
 

@@ -6,9 +6,9 @@ import streamlit as st
 from openai import OpenAI
 from fastmcp import Client
 from dotenv import load_dotenv
-from server import mcp
-from summarizer import summarize_email_list, summarize_full_email
-from digest import start_scheduler
+from gmail.server import mcp
+from gmail.summarizer import summarize_email_list, summarize_full_email
+from gmail.digest import start_scheduler
 
 load_dotenv()
 

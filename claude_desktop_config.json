@@ -2,10 +2,21 @@
   "mcpServers": {
     "gmail": {
       "command": "d:\\InterView\\All Code Hub\\MCP\\venv\\Scripts\\python.exe",
-      "args": ["d:\\InterView\\All Code Hub\\MCP\\server.py"],
+      "args": ["d:\\InterView\\All Code Hub\\MCP\\gmail\\server.py"],
       "env": {
         "GOOGLE_CREDENTIALS_FILE": "d:\\InterView\\All Code Hub\\MCP\\credentials.json",
         "GOOGLE_TOKEN_FILE": "d:\\InterView\\All Code Hub\\MCP\\token.json"
+      }
+    },
+    "sql": {
+      "command": "d:\\InterView\\All Code Hub\\MCP\\venv\\Scripts\\python.exe",
+      "args": ["d:\\InterView\\All Code Hub\\MCP\\sql\\server.py"],
+      "env": {
+        "SQL_SERVER_HOST": "localhost",
+        "SQL_SERVER_DB": "your_database",
+        "SQL_SERVER_USER": "",
+        "SQL_SERVER_PASSWORD": "",
+        "SQL_SERVER_DRIVER": "ODBC Driver 17 for SQL Server"
       }
     }
   }

@@ -1,5 +1,5 @@
 from fastmcp import FastMCP
-from gmail_tools import (
+from gmail.gmail_tools import (
     list_emails,
     read_email,
     send_email,

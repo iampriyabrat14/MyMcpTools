@@ -1,12 +1,11 @@
 import os
-import asyncio
 import logging
 from datetime import datetime
 from apscheduler.schedulers.background import BackgroundScheduler
 from apscheduler.triggers.cron import CronTrigger
 from dotenv import load_dotenv
-from gmail_tools import list_emails, send_email
-from summarizer import summarize_email
+from gmail.gmail_tools import list_emails, send_email
+from gmail.summarizer import summarize_email
 
 load_dotenv()
 

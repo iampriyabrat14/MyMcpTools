@@ -3,7 +3,7 @@ import email as email_lib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from typing import Optional
-from gmail_auth import get_gmail_service
+from gmail.gmail_auth import get_gmail_service
 
 
 def list_emails(max_results: int = 10, query: str = "") -> list[dict]:
@@ -172,8 +172,6 @@ def get_email_count(label: str = "INBOX") -> dict:
 
 
 def forward_email(message_id: str, to: str, note: str = "") -> dict:
-    service = get_gmail_service()
-
     original = read_email(message_id)
     subject = original["subject"]
     if not subject.lower().startswith("fwd:"):
